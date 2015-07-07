@@ -1,0 +1,297 @@
+/* Default */
+* ul li{
+	list-style:none;
+}
+body {
+	background-image:url(../images/blackcattattoos_bg.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-color:#1e1e1e;
+	color:#ffffff;
+	text-align:center;
+}
+
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+.gold {color:#d4d0b4;}
+.main-container {padding:0 30px;}
+
+.logo {
+	height:40px;
+}
+
+/* Navigation */
+.nav > li.dropdown.open {
+  position: static;
+}
+.nav > li.dropdown.open .dropdown-menu {
+  display: table;
+  border:none;
+  border-radius:0px;
+  width: 100%;
+  text-align: center;
+  left:0;
+  right:0;
+  background-color:#d4d0b4;
+  color:#333333;
+  padding:0;
+}
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+	background-color:#d4d0b4 !important;
+}
+.navbar-nav {
+	font-size:18px;
+	margin-top:15px;
+}
+.navbar-default {
+	background:none;
+	border:none;
+}
+.navbar-default .navbar-nav > li > a {
+	color:#ffffff;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+	color:#d4d0b4;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+	color:#333333;
+	background-color:#ffffff;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color:#333333;
+	line-height:50px;
+	text-align:center;
+}
+.navbar-default .navbar-toggle {
+	border:none;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background:none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color:#d4d0b4;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-top:none;
+    box-shadow:none;
+}
+.dropdown-menu > li {
+  display: table-cell;
+  height: 70px;
+  line-height: 70px;
+  vertical-align: middle;
+  background-color:none;
+}
+.dropdown-menu > li:hover {
+	background-color:#cac6aa;
+}
+.dropdown-menu > li > a:focus {
+	background-color:none;
+	color:#333333;
+}
+.dropdown-menu > li > a:hover {
+	background:none;
+	color:#333333;
+}
+
+section {
+	margin-bottom:30px;
+}
+
+/* Shop */
+#Shop {
+	margin-top:40px;
+}
+.instagramleftspcr {
+	margin-left:20px;
+}
+
+/* Events */
+#Events {
+	overflow: auto;
+}
+
+/* FAQs */
+#FAQs {
+	margin-top:50px;
+}
+.faqsheading {
+	margin-top:0;
+}
+.panel-default > .panel-heading {
+	background-color:#d4d0b4;
+	color:#333333;
+}
+.panel-group .panel {
+	border-radius:0;
+}
+.panel-title > a {
+	color:#333333;
+	font-family: Merriweather, Georgia, "Times New Roman", serif;
+	line-height:23px;
+	letter-spacing:1px;
+	text-decoration:none;
+}
+.panel-heading {
+	border-radius:0;
+	}
+.panel-default {
+	border-color:#d4d0b4;
+}
+.panel {
+	background-color:transparent;
+}
+
+/* Contact Section */
+.contactlist li {
+	list-style-type:none;
+	display:inline;
+	margin-right:40px;
+}
+.contactlist {
+	margin-top:80px;
+}
+a.contactlist, a.contactlist:visited {
+	color:#ffffff;
+}
+a.contactlist:hover, a.contactlist:active {
+	color:#d4d0b4;
+	text-decoration:none;
+}
+a:link, a:visited {
+	color:#ffffff;
+	text-decoration:none;
+}
+a:hover, a:active {
+	color:#d4d0b4;
+	text-decoration:none;
+}
+#map {
+	margin-bottom:-50px;
+}
+a.map:link, a.map:visited {
+	color:#d4d0b4;
+}
+a.map:hover, a.map:active {
+	color:#d4d0b4;
+	text-decoration:underline;
+}
+/* Profile */
+ul.profilelist {
+	text-align:center;
+	margin-left:-40px;
+}
+.profilelist li {
+	display:inline;
+}
+.gallery{
+	margin-top:40px;
+}
+.instagramspcr {
+	margin-right:30px;
+}
+.galleryinfospcr {
+	margin-bottom:30px;
+}
+
+/* Footer */
+.container.footer {
+	background:#d4d0b4;
+	width:auto;
+}
+.copyrights,
+.credits {
+	color:#333333;
+	padding:40px 0;
+}
+a.dmd:link, a.dmd:visited {
+	color:#333333;
+}
+a.dmd:hover, a.dmd:active {
+	color:#333333;
+	text-decoration:underline;
+}
+span.darklink, span.darklink:visited {
+	color:#333333;
+}
+span.darklink:hover, span.darklink:active {
+	color:#333333;
+	text-decoration:underline;
+}
+/* Typography */
+@font-face {
+	font-family: Native;
+	src: url(../fonts/Native.ttf);
+}
+@font-face {
+	font-family: Merriweather;
+	src:url(../fonts/Merriweather-LightItalic.ttf);
+}
+p,
+.merriweather {
+	color:#ffffff;
+	font-family: Merriweather, Georgia, "Times New Roman", serif;
+	line-height:23px;
+	letter-spacing:1px;
+}
+.h1 {
+	color:#d4d0b4;
+	font-family: Native, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+img {
+  margin:0 auto;
+}
+.faqsimg {
+	margin-bottom:20px;
+}
+.contactlist li {
+	display:block;
+}
+.profilelist li {
+	display:block;
+}
+.contactlist {
+	margin-top:20px;
+}
+.event {
+	margin-bottom:40px;
+}
+#map {
+	margin-bottom:0;
+}
+.profilelistspcr {
+	margin-right:0;
+}
+.instagramspcr {
+	margin-right:0;
+}
+.galleryinfospcr {
+	margin-bottom:0;
+}
+}
+@media screen and (max-width: 767px) {
+.dropdown-menu > li {
+  display: block;
+}
+.pull-left { float:none !important; }
+.pull-right { float:none !important; }
+.copyrights {
+	padding-bottom:0;
+}
+.credits {
+	padding-top:0;
+}
+}
