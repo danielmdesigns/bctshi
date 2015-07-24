@@ -2,12 +2,23 @@
 * ul li{
 	list-style:none;
 }
+html { 
+
+}
 body {
-	background-image:url(../images/blackcattattoos_bg.png);
+	background: url('../images/blackcattattoos_bg.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size:cover;
+	background-size: cover;
+	
+	/*background-image:url(../images/blackcattattoos_bg.png);
 	background-position:center center;
-	background-repeat:no-repeat;
-	background-attachment:fixed;
 	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;*/
+	
 	background-color:#1e1e1e;
 	color:#ffffff;
 	text-align:center;
@@ -104,21 +115,49 @@ body {
 	color:#333333;
 }
 
+/* Main Sections */
 section {
-	margin-bottom:30px;
+	margin-bottom:40px;
 }
 
 /* Shop */
 #Shop {
 	margin-top:40px;
 }
-.instagramleftspcr {
-	margin-left:20px;
+#About {
+	margin-top:60px;
 }
+article {
+	margin-top:20px;
+}
+.btn:first-child {
+	margin-right:15px;
+}
+.btn-primary,
+.btn-primary:visited {
+	background-color:transparent;
+	color:#FFF;
+	padding:15px 25px;
+	font-size:16px;
+	font-family:Merriweather, Georgia, "Times New Roman", serif;
+	border:1px solid #d4d0b4;
+	border-radius:0;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+	background-color:#d4d0b4;
+	color:#333 !important;
+	border-color:0;
+}
+
+/*.instagramleftspcr {
+	margin-left:20px;
+}*/
 
 /* Events */
 #Events {
-	overflow: auto;
+	/*overflow: auto;*/
 }
 
 /* FAQs */
@@ -153,39 +192,51 @@ section {
 }
 
 /* Contact Section */
-.contactlist li {
+#Contact {
+	margin-bottom:50px;
+}
+.contact-link li {
 	list-style-type:none;
 	display:inline;
 	margin-right:40px;
 }
-.contactlist {
+.contact-link {
 	margin-top:80px;
 }
-a.contactlist, a.contactlist:visited {
+a.contact-link,
+a.contact-link:visited {
 	color:#ffffff;
 }
-a.contactlist:hover, a.contactlist:active {
+a.contact-link:hover,
+a.contact-link:active {
 	color:#d4d0b4;
 	text-decoration:none;
 }
-a:link, a:visited {
+a:link,
+a:visited {
 	color:#ffffff;
 	text-decoration:none;
 }
-a:hover, a:active {
+a:hover,
+a:active {
 	color:#d4d0b4;
 	text-decoration:none;
 }
 #map {
 	margin-bottom:-50px;
 }
-a.map:link, a.map:visited {
+
+/* Gold Links */
+a.gold-link:link,
+a.gold-link:visited {
 	color:#d4d0b4;
 }
-a.map:hover, a.map:active {
+a.gold-link:hover,
+a.gold-link:active {
 	color:#d4d0b4;
 	text-decoration:underline;
 }
+
 /* Profile */
 ul.profilelist {
 	text-align:center;
@@ -195,13 +246,56 @@ ul.profilelist {
 	display:inline;
 }
 .gallery{
-	margin-top:40px;
+	margin-top:25px;
 }
 .instagramspcr {
 	margin-right:30px;
 }
 .galleryinfospcr {
 	margin-bottom:30px;
+}
+.thumbnail {
+	background-color:transparent;
+	border:0;
+	border-radius:0;
+}
+.bar {
+	height:2px;
+	width:auto;
+	background-color:#d4d0b4;
+}
+
+/* Carousel */
+#quote-carousel {
+	padding: 0 10px 30px 10px;
+	margin-top: 10px;
+	text-align:center;
+	font-family: Merriweather, Georgia, "Times New Roman", serif;
+}
+.carousel-quotes {
+	font-style:italic;
+	font-weight:200;
+	font-size:14px;
+}
+/* indicator position */
+#quote-carousel .carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* indicator color */
+#quote-carousel .carousel-indicators li {
+	background: transparent;
+	border:1px solid #d4d0b4;
+	border-radius:50%;
+}
+/* active indicator */
+#quote-carousel .carousel-indicators .active {
+	background: #d4d0b4;
+	height:10px;
+	width:10px;
+	margin-bottom:1px;
 }
 
 /* Footer */
@@ -212,22 +306,27 @@ ul.profilelist {
 .copyrights,
 .credits {
 	color:#333333;
-	padding:40px 0;
+	padding:50px 0 40px 0;
 }
-a.dmd:link, a.dmd:visited {
+a.danielmdesigns:link,
+a.danielmdesigns:visited {
 	color:#333333;
 }
-a.dmd:hover, a.dmd:active {
-	color:#333333;
-	text-decoration:underline;
-}
-span.darklink, span.darklink:visited {
-	color:#333333;
-}
-span.darklink:hover, span.darklink:active {
+a.danielmdesigns:hover,
+a.danielmdesigns:active {
 	color:#333333;
 	text-decoration:underline;
 }
+span.darklink,
+span.darklink:visited {
+	color:#333333;
+}
+span.darklink:hover,
+span.darklink:active {
+	color:#333333;
+	text-decoration:underline;
+}
+
 /* Typography */
 @font-face {
 	font-family: Native;
@@ -257,21 +356,21 @@ img {
 .faqsimg {
 	margin-bottom:20px;
 }
-.contactlist li {
+.contact-link li {
 	display:block;
 }
 .profilelist li {
 	display:block;
 }
-.contactlist {
+.contact-link {
 	margin-top:20px;
 }
 .event {
 	margin-bottom:40px;
 }
-#map {
+/*#map {
 	margin-bottom:0;
-}
+}*/
 .profilelistspcr {
 	margin-right:0;
 }
@@ -280,6 +379,9 @@ img {
 }
 .galleryinfospcr {
 	margin-bottom:0;
+}
+.bar {
+	margin-top:25px;
 }
 }
 @media screen and (max-width: 767px) {
@@ -293,5 +395,21 @@ img {
 }
 .credits {
 	padding-top:0;
+	padding-bottom:30px;
+	margin-top:20px;
 }
+.thumbnail {
+	margin-bottom:10px;
+}
+}
+@media (max-width: 400px){
+  a.btn-primary {
+	  display:block;
+  }
+  a.btn-primary:nth-child(1) {
+	  margin-right:0;
+  }
+  a.btn-primary:nth-child(2) {
+	  margin-top:20px;
+  }
 }
