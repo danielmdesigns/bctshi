@@ -18,44 +18,34 @@ $(document).ready(function () {
     // load index page when the page loads
     $(".main-container").load("shop.html");
     $("#shop").click(function () {
-        // load home page on click
         $(".main-container").load("shop.html");
     });
     $("#faqs").click(function () {
-        // load about page on click
         $(".main-container").load("faqs.html");
     });
 	$("#richie").click(function () {
-        // load contact form onclick
-        $(".main-container").load("artist/richie/richie.html");
+        $(".main-container").load("artist/richie.html");
     });
     $("#shay").click(function () {
-        // load contact form onclick
-        $(".main-container").load("artist/shay/shay.html");
+        $(".main-container").load("artist/shay.html");
     });
     $("#jose").click(function () {
-        // load contact form onclick
-        $(".main-container").load("artist/jose/jose.html");
+        $(".main-container").load("artist/jose.html");
     });
     $("#marie").click(function () {
-        // load contact form onclick
-        $(".main-container").load("artist/marie/marie.html");
+        $(".main-container").load("artist/marie.html");
     });
 	$("#simon").click(function () {
-        // load contact form onclick
-        $(".main-container").load("artist/simon/simon.html");
+        $(".main-container").load("artist/simon.html");
     });
 	$("#jaimie").click(function () {
-        // load contact form onclick
-        $(".main-container").load("artist/jamie/jaimie.html");
+        $(".main-container").load("artist/jaimie.html");
     });
 	$("#andrew").click(function () {
-        // load contact form onclick
-        $(".main-container").load("artist/andrew/andrew.html");
+        $(".main-container").load("artist/andrew.html");
     });
 	$("#teddie").click(function () {
-        // load contact form onclick
-        $(".main-container").load("artist/teddie/teddie.html");
+        $(".main-container").load("artist/teddie.html");
     });
 	
 	//map
@@ -64,5 +54,11 @@ $(document).ready(function () {
     	$("#map").slideToggle("slow");
 		return false;
   	});
+	
+	//google maps
+	$('address').each(function () {
+	  var link = "<a class='maps' href='http://maps.google.com/maps?q=" + encodeURIComponent( $(this).text() ) + "' target='_blank'>" + $(this).text() + "</a>";
+	  $(this).html(link);
+	});
 	
 });
