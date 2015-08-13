@@ -1,8 +1,8 @@
 //Javascript, jQuery, and AJAX
 $(document).ready(function(){
   "use strict";
-  // load index page when the page loads
-  $(".main-container").load("shop.html");
+  // load default shop.html page when the page loads in main-container
+  //$(".main-container").load("shop.html");
   // load page when nav link clicked
   $("#shop").click(function(){
 	  $(".main-container").load("shop.html");
