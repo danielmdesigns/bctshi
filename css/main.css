@@ -18,7 +18,7 @@ body {
 .right {float:right;}
 .clear {clear:both;}
 .gold {color:#d4d0b4;}
-.main-container {padding:0 30px;}
+.main-container {padding:0 30px; margin-top: 60px;}
 
 .logo {
   height:40px;
@@ -47,7 +47,7 @@ body {
 }
 .navbar-nav {
   font-size:18px;
-  margin-top:15px;
+  /*margin-top:15px;*/
 }
 .navbar-default {
   background:none;
@@ -77,6 +77,9 @@ body {
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
   background:none;
+}
+.navbar-toggle .icon-bar{
+	height: 1px;
 }
 .navbar-default .navbar-toggle .icon-bar {
 	background-color:#d4d0b4;
@@ -390,5 +393,8 @@ a.btn-primary:nth-child(1) {
 }
 a.btn-primary:nth-child(2) {
 	margin-top:20px;
+}
+.main-container{
+	margin-top: -20px;
 }
 }
