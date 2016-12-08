@@ -16,17 +16,14 @@ $(document).ready(function(){
   $("#shay").click(function(){
 	  $(".main-container").load("artist/shay.html");
   });
-  $("#jose").click(function(){
-	  $(".main-container").load("artist/jose.html");
+  $("#luke").click(function(){
+	  $(".main-container").load("artist/luke.html");
   });
-  $("#marie").click(function(){
-	  $(".main-container").load("artist/marie.html");
+  $("#kai").click(function(){
+	  $(".main-container").load("artist/kai.html");
   });
-  $("#simon").click(function(){
-	  $(".main-container").load("artist/simon.html");
-  });
-  $("#jaimie").click(function(){
-	  $(".main-container").load("artist/jaimie.html");
+  $("#cody").click(function(){
+	  $(".main-container").load("artist/cody.html");
   });
   $("#andrew").click(function(){
 	  $(".main-container").load("artist/andrew.html");
