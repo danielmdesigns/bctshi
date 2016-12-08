@@ -238,8 +238,9 @@ ul.profilelist {
 }
 .thumbnail {
   background-color:transparent;
-  border:0;
+  border:10px solid #D4D0B4;
   border-radius:0;
+  padding: 0;
 }
 .bar {
   height:2px;
